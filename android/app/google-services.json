@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "133199136664",
+    "project_id": "vima-78746",
+    "storage_bucket": "vima-78746.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:133199136664:android:8cdb299477c3ca9b78cded",
+        "android_client_info": {
+          "package_name": "com.example.money_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAp8mSHbCu044fQB_xvTQ_hcb5fNpR9_m4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

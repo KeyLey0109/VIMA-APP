@@ -1,0 +1,54 @@
+name: vima
+description: "VIMA - Your Smart Financial Assistant"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.2.1
+
+  # Database - sqflite for mobile/desktop, shared_preferences JSON for web
+  sqflite: ^2.4.2
+  sqflite_common_ffi: ^2.3.4+4
+  path: ^1.9.1
+
+  # Image handling
+  image_picker: ^1.1.2
+  path_provider: ^2.1.5
+
+  # Formatting
+  intl: ^0.20.2
+
+  # Calendar
+  table_calendar: ^3.2.0
+
+  # State Management
+  flutter_bloc: ^9.1.0
+  equatable: ^2.0.7
+
+  # Dependency Injection
+  get_it: ^8.0.3
+  shared_preferences: ^2.5.5
+  shimmer: ^3.0.0
+  animations: ^2.1.2
+  flutter_staggered_animations: ^1.1.1
+  fl_chart: ^1.2.0
+  firebase_core: ^4.7.0
+  cloud_firestore: ^6.3.0
+  flutter_local_notifications: ^17.2.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/

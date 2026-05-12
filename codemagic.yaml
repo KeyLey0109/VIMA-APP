@@ -1,0 +1,23 @@
+workflows:
+  ios-release:
+    name: iOS Release Build
+    instance_type: mac_mini_m2
+    max_build_duration: 120
+    environment:
+      flutter: default
+      xcode: latest
+      cocoapods: default
+    scripts:
+      - name: Get Flutter packages
+        script: |
+          flutter packages pub get
+      - name: Flutter build ipa
+        script: |
+          # Chạy lệnh build iOS (Không code signing nếu chỉ muốn test build)
+          # Lưu ý: Để build thành công file .ipa cài được lên máy thật, 
+          # bạn cần setup Code Signing trong Codemagic.
+          flutter build ios --release --no-codesign
+    artifacts:
+      - build/ios/iphoneos/*.app
+      - build/ios/ipa/*.ipa
+      - /tmp/xcodebuild_logs/*.log
